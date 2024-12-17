@@ -53,6 +53,10 @@ cmd_init() {
         echo "Desk dir already exists at ${PREFIX}"
         exit 1
     fi
+    [ -f /etc/alpine-release ] && {
+      echo "Alpine Linux detected. Please run: "
+      echo "apk add bash gawk sed"
+    }
     read -p "Where do you want to store your deskfiles? (default: ${PREFIX}): " \
         NEW_PREFIX
     [ -z "${NEW_PREFIX}" ] && NEW_PREFIX="$PREFIX"

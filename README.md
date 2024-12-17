@@ -118,7 +118,7 @@ rendering.
 Assuming `~/bin` exists and is on the PATH... otherwise, substitute `/usr/local/bin`
 and add `sudo` as needed.
 
-0. `curl https://raw.githubusercontent.com/jamesob/desk/master/desk > ~/bin/desk`
+0. `curl https://raw.githubusercontent.com/uplight-dev/desk/master/desk > ~/bin/desk`
 0. `chmod +x ~/bin/desk`
 
 #### With git
